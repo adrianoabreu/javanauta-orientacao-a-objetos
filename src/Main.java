@@ -1,7 +1,5 @@
 import etapaConstrucao.PlantaCasa;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
         PlantaCasa casa = new PlantaCasa();
@@ -18,5 +16,9 @@ public class Main {
 
         casa.mudarCorParede("Branco");
         casa.alterarCaracteristicas(100, 2,2,"Madeira");
+
+        Integer cpf = 01234567;
+        String cpfConvertido = Util.conversorString(cpf);  //metodo estático
+
     }
 }
