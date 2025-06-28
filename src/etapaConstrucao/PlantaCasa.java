@@ -19,6 +19,19 @@ public class PlantaCasa {
         System.out.println("Cor: " + cor);
     }
 
+    public void mudarCorParede(String novaCor){
+        cor = novaCor;
+        pintar();
+    }
+
+    public void alterarCaracteristicas(int metros, int quartos, int banheiros, String mat) {
+        metragem = metros;
+        numeroQuartos = quartos;
+        numeroBanheiros = banheiros;
+        material = mat;
+        construir();
+    }
+
     public int somarMetragem(){
         return metragem * numeroBanheiros + numeroQuartos;
     }

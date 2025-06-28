@@ -16,5 +16,7 @@ public class Main {
         casa.pintar();
         System.out.println(casa.somarMetragem());
 
+        casa.mudarCorParede("Branco");
+        casa.alterarCaracteristicas(100, 2,2,"Madeira");
     }
 }
